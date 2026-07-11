@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajouter un compte</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    position: relative;
+    overflow: hidden;
+    background-image: url('rbl.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10,10,14,0.72);
+    z-index: 1;
+  }
+
+  .card {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 360px;
+    background: #1c1e26;
+    border-radius: 16px;
+    padding: 28px 22px;
+    margin: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  h1 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  input {
+    width: 100%;
+    background: #2a2c36;
+    border: 0.5px solid #3a3c46;
+    color: #e8e8ec;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    outline: none;
+  }
+  input::placeholder { color: #9a9ba5; }
+  input:focus { border-color: #6a6c76; }
+  .btn-outline {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    cursor: pointer;
+  }
+  .btn-outline:hover { background: rgba(255,255,255,0.08); }
+  .link-text {
+    text-align: center;
+    color: #e8e8ec;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 18px;
+    cursor: pointer;
+  }
+  .divider {
+    border-top: 0.5px solid #3a3c46;
+    margin: 0 0 16px;
+  }
+  .btn-secondary {
+    width: 100%;
+    background: #2a2c36;
+    border: none;
+    color: #e8e8ec;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .btn-secondary:hover { background: #33353f; }
+  .create-account {
+    text-align: center;
+    color: #e8e8ec;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0 0;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="card">
+  <h1>Ajouter un compte</h1>
+
+  <input type="text" placeholder="Identifiant/E-mail/Téléphone">
+  <input type="password" placeholder="Mot de passe">
+
+  <button class="btn-outline">Connexion</button>
+
+  <p class="link-text">Mot de passe ou nom d'utilisateur oublié ?</p>
+
+  <div class="divider"></div>
+
+  <button class="btn-secondary">Envoyez-moi un code unique par email</button>
+  <button class="btn-secondary">Connexion rapide</button>
+
+  <p class="create-account">Créer un nouveau compte</p>
+</div>
+
+</body>
+</html>
